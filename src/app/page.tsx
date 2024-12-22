@@ -7,7 +7,7 @@ export default async function Page() {
   const posts = await getPosts();
 
   return (
-    <main>
+    <main className='bg-black'>
       <h1 className='text-green-400 text-3xl md:text-3xl lg:text-4xl font-bold hover:underline hover:text-orange-400 hover:scale-y-150'>Welcome to my First Blog with Sanity</h1>
       <ul>
         {posts.map((post) => (
