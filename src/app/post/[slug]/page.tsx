@@ -73,7 +73,7 @@ export default async function PostPage({ params }: { params: { slug: string } })
 
   return (
     <main className="container mx-auto p-4">
-      <article className="bg-gray-800 p-6 rounded-lg shadow-md">
+      <article className="bg-gray-500 p-6 rounded-lg shadow-md">
         <h1 className="text-green-400 text-3xl font-bold hover:underline hover:text-orange-400 hover:scale-y-125 mb-4">
           {post.title}
         </h1>
@@ -101,7 +101,7 @@ export default async function PostPage({ params }: { params: { slug: string } })
       </article>
 
       {/* About the author section */}
-      <section className="mt-8 p-4 bg-gray-700 rounded-lg">
+      <section className="mt-8 p-4 bg-gray-500 rounded-lg">
         <h3 className="text-white text-lg font-bold hover:underline hover:text-yellow-300 hover:scale-y-125 mb-4">
           About the Author
         </h3>
@@ -122,7 +122,7 @@ export default async function PostPage({ params }: { params: { slug: string } })
           )}
 
           {/* Author's name */}
-          <p className="text-white font-bold hover:text-orange-400">
+          <p className="text-white font-bold hover:text-yellow-300">
             {post.author?.name || 'No author name available'}
           </p>
         </div>
@@ -135,7 +135,7 @@ export default async function PostPage({ params }: { params: { slug: string } })
       </section>
 
       {/* Back to Home link */}
-      <div className="hover:text-yellow-300 mt-8">
+      <div className="hover:text-blue-500 mt-8">
         <Link href="/">&lt;&lt; Back to Home Page</Link>
       </div>
     </main>
